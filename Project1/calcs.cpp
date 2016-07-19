@@ -8,7 +8,6 @@ using namespace std;
 
 int main() 
 {
-	//remove("test.txt");
 	int i;
 	bool check = true;
 	cout << "Enter a value between 1 and 10: ";
@@ -18,12 +17,12 @@ int main()
 		if (i <= 10)
 		{
 			calcs(i);
-			check = false;
+			check = !check;
 		}
 		else
 		{
-			check = false;
-			cout << "Number out of spec, exiting.";
+			check = !check;
+			cout << "Number out of spec, exiting." << endl;
 		}
 	
 	}

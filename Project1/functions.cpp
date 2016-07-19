@@ -6,14 +6,14 @@ using namespace std;
 
 void calcs(int i)
 {
-	//remove("test.txt");
-	fstream file("test.txt");
+	
+	fstream file;
 	fstream fileIn;
 	int n = 1;
 	int m;
 	//int random;
 	
-	file.open("test.txt");
+	file.open("test.txt", fstream::out | fstream::trunc);
 
 	while (n <= i)
 	{
