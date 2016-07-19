@@ -6,7 +6,7 @@ using namespace std;
 
 void calcs(int i)
 {
-	remove("test.txt");
+	//remove("test.txt");
 	fstream file("test.txt");
 	fstream fileIn;
 	int n = 1;
